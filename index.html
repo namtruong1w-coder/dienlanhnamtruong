@@ -11,7 +11,9 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--dark);background:var(--bg);line-height:1.6}
 a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
 header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:10px 0}.brand img{height:62px;width:auto;display:block;border-radius:10px}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 0}
+.brand{font-size:22px;font-weight:950;color:var(--blue);white-space:nowrap}
+.brand small{display:block;font-size:11px;color:var(--muted);font-weight:700;letter-spacing:.04em}
 nav{display:flex;gap:20px;font-weight:700;font-size:14px}nav a:hover{color:var(--blue2)}
 .hero{background:radial-gradient(circle at 85% 20%,#2b78e8 0,#0b3d91 45%,#072b65 100%);color:#fff;padding:76px 0 68px;overflow:hidden}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:48px}.eyebrow{color:var(--yellow);font-weight:900;letter-spacing:.08em;text-transform:uppercase}
@@ -23,17 +25,17 @@ section{padding:72px 0}.section-head{text-align:center;max-width:720px;margin:0 
 .cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 8px 28px rgba(16,32,51,.05)}.icon{font-size:32px}.card h3{margin:10px 0 6px}.card p{color:var(--muted);font-size:14px;margin:0}
 .price-wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:900px;margin:auto}.price-card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden}.price-card h3{margin:0;padding:18px 20px;background:#eef5ff;color:var(--blue)}.price-row{display:flex;justify-content:space-between;gap:16px;padding:14px 20px;border-top:1px solid var(--line);font-size:14px}.price-row b{white-space:nowrap;color:var(--blue2)}.note{text-align:center;color:var(--muted);font-size:13px;margin-top:18px}
 .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.gallery-item{display:block;overflow:hidden;border-radius:16px;background:#ddd;aspect-ratio:4/5}.gallery-item img{width:100%;height:100%;object-fit:cover;display:block;transition:.25s}.gallery-item:hover img{transform:scale(1.04)}
-.about{background:#fff}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center}.about img{width:100%;border-radius:22px;box-shadow:0 16px 45px rgba(16,32,51,.12)}.ticks{display:grid;gap:10px;padding:0;list-style:none}.ticks li::before{content:"✓";color:#0a9b5b;font-weight:900;margin-right:10px}
+.about{background:#fff}.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center}.about img{width:100%;height:430px;object-fit:cover;border-radius:22px;box-shadow:0 16px 45px rgba(16,32,51,.12)}.ticks{display:grid;gap:10px;padding:0;list-style:none}.ticks li::before{content:"✓";color:#0a9b5b;font-weight:900;margin-right:10px}
 .contact{background:var(--dark);color:#fff}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.contact-box{border:1px solid rgba(255,255,255,.13);border-radius:18px;padding:25px;background:rgba(255,255,255,.04)}.contact-box p{color:#cbd5e1}.contact-big{font-size:30px;font-weight:950;color:var(--yellow)}.contact-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.contact-links a{background:#fff;color:var(--dark);padding:11px 15px;border-radius:10px;font-weight:800}
 footer{background:#08111d;color:#9fb0c4;text-align:center;padding:22px;font-size:13px}
 .floating{position:fixed;right:18px;bottom:18px;z-index:30;display:flex;flex-direction:column;gap:9px}.float-btn{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--yellow);color:#102033;font-weight:950;box-shadow:0 8px 25px rgba(0,0,0,.25)}
 @media(max-width:850px){nav{display:none}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.price-wrap{grid-template-columns:1fr}.hero-card img{height:330px}}
-@media(max-width:520px){section{padding:52px 0}.brand img{height:52px}.cards{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.hero{padding-top:52px}.hero p{font-size:16px}.contact-big{font-size:25px}}
+@media(max-width:520px){section{padding:52px 0}.brand{font-size:18px}.brand small{font-size:9px}.cards{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.hero{padding-top:52px}.hero p{font-size:16px}.contact-big{font-size:25px}}
 </style>
 </head>
 <body>
 <header><div class="container nav">
-<a class="brand" href="#top"><img src="images/logo.jpeg" alt="Điện Lạnh Nam Trương"></a>
+<a class="brand" href="#top">ĐIỆN LẠNH NAM TRƯƠNG<small>BUÔN MA THUỘT · ĐẮK LẮK</small></a>
 <nav><a href="#dich-vu">Dịch vụ</a><a href="#bang-gia">Bảng giá</a><a href="#hinh-anh">Hình ảnh</a><a href="#lien-he">Liên hệ</a></nav>
 </div></header>
 
@@ -49,7 +51,7 @@ footer{background:#08111d;color:#9fb0c4;text-align:center;padding:22px;font-size
 <a class="btn btn-light" href="https://zalo.me/0862864590" target="_blank" rel="noopener">💬 Nhắn Zalo</a>
 </div>
 </div>
-<div class="hero-card"><img src="images/cong-viec-5.jpeg" alt="Công việc lắp đặt điện lạnh"></div>
+<div class="hero-card"><img src="IMG_0699.jpeg" alt="Công việc điện lạnh Nam Trương"></div>
 </div>
 </section>
 
@@ -87,20 +89,24 @@ footer{background:#08111d;color:#9fb0c4;text-align:center;padding:22px;font-size
 
 <section id="hinh-anh">
 <div class="container"><div class="section-head"><h2>Hình ảnh công việc thực tế</h2><p>Một số hình ảnh lắp đặt, sửa chữa và công việc điện lạnh của Nam Trương.</p></div>
-<div class="gallery"><a class="gallery-item" href="images/cong-viec-1.jpeg" target="_blank"><img src="images/cong-viec-1.jpeg" alt="Công việc điện lạnh Nam Trương 1" loading="lazy"></a>
-<a class="gallery-item" href="images/cong-viec-2.jpeg" target="_blank"><img src="images/cong-viec-2.jpeg" alt="Công việc điện lạnh Nam Trương 2" loading="lazy"></a>
-<a class="gallery-item" href="images/cong-viec-3.jpeg" target="_blank"><img src="images/cong-viec-3.jpeg" alt="Công việc điện lạnh Nam Trương 3" loading="lazy"></a>
-<a class="gallery-item" href="images/cong-viec-4.jpeg" target="_blank"><img src="images/cong-viec-4.jpeg" alt="Công việc điện lạnh Nam Trương 4" loading="lazy"></a>
-<a class="gallery-item" href="images/cong-viec-5.jpeg" target="_blank"><img src="images/cong-viec-5.jpeg" alt="Công việc điện lạnh Nam Trương 5" loading="lazy"></a>
-<a class="gallery-item" href="images/cong-viec-6.jpeg" target="_blank"><img src="images/cong-viec-6.jpeg" alt="Công việc điện lạnh Nam Trương 6" loading="lazy"></a>
-<a class="gallery-item" href="images/cong-viec-7.webp" target="_blank"><img src="images/cong-viec-7.webp" alt="Công việc điện lạnh Nam Trương 7" loading="lazy"></a>
-<a class="gallery-item" href="images/cong-viec-8.jpeg" target="_blank"><img src="images/cong-viec-8.jpeg" alt="Công việc điện lạnh Nam Trương 8" loading="lazy"></a>
-<a class="gallery-item" href="images/cong-viec-9.jpeg" target="_blank"><img src="images/cong-viec-9.jpeg" alt="Công việc điện lạnh Nam Trương 9" loading="lazy"></a></div></div>
+<div class="gallery">
+<a class="gallery-item" href="IMG_0233.jpeg" target="_blank"><img src="IMG_0233.jpeg" alt="Công việc điện lạnh 1" loading="lazy"></a>
+<a class="gallery-item" href="IMG_0536.jpeg" target="_blank"><img src="IMG_0536.jpeg" alt="Công việc điện lạnh 2" loading="lazy"></a>
+<a class="gallery-item" href="IMG_0648.jpeg" target="_blank"><img src="IMG_0648.jpeg" alt="Công việc điện lạnh 3" loading="lazy"></a>
+<a class="gallery-item" href="IMG_0652.png" target="_blank"><img src="IMG_0652.png" alt="Công việc điện lạnh 4" loading="lazy"></a>
+<a class="gallery-item" href="IMG_0699.jpeg" target="_blank"><img src="IMG_0699.jpeg" alt="Công việc điện lạnh 5" loading="lazy"></a>
+<a class="gallery-item" href="IMG_1281.jpeg" target="_blank"><img src="IMG_1281.jpeg" alt="Công việc điện lạnh 6" loading="lazy"></a>
+<a class="gallery-item" href="IMG_1627.jpeg" target="_blank"><img src="IMG_1627.jpeg" alt="Công việc điện lạnh 7" loading="lazy"></a>
+<a class="gallery-item" href="IMG_1983.jpeg" target="_blank"><img src="IMG_1983.jpeg" alt="Công việc điện lạnh 8" loading="lazy"></a>
+<a class="gallery-item" href="IMG_2236.jpeg" target="_blank"><img src="IMG_2236.jpeg" alt="Công việc điện lạnh 9" loading="lazy"></a>
+<a class="gallery-item" href="IMG_2462.jpeg" target="_blank"><img src="IMG_2462.jpeg" alt="Công việc điện lạnh 10" loading="lazy"></a>
+<a class="gallery-item" href="IMG_9190.jpeg" target="_blank"><img src="IMG_9190.jpeg" alt="Công việc điện lạnh 11" loading="lazy"></a>
+</div></div>
 </section>
 
 <section class="about">
 <div class="container about-grid">
-<div><img src="images/cong-viec-6.jpeg" alt="Đội ngũ Điện Lạnh Nam Trương"></div>
+<div><img src="IMG_9190.jpeg" alt="Công việc Điện Lạnh Nam Trương"></div>
 <div><div class="eyebrow" style="color:#0758c7">Phục vụ tại Đắk Lắk</div><h2>Điện Lạnh Nam Trương</h2>
 <p>Nhận công việc điện lạnh dân dụng với tiêu chí <b>làm kỹ, tư vấn rõ, giá hợp lý</b>. Khách có thể gọi trực tiếp hoặc nhắn Zalo để gửi tình trạng máy và được tư vấn trước.</p>
 <ul class="ticks"><li>Nhận vệ sinh và bảo dưỡng định kỳ</li><li>Nhận sửa chữa và kiểm tra tận nơi</li><li>Nhận tháo lắp, di dời, lắp đặt máy lạnh</li><li>Phục vụ Buôn Ma Thuột và khu vực lân cận</li></ul>
